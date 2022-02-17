@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "name": "@jenova/with-pothos",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "start": "ts-node --transpile-only src/app.ts",
+    "type": "tsc --noEmit"
+  },
+  "dependencies": {
+    "jenova-graphql": "0.0.1",
+    "@pothos/core": "^3.2.0",
+    "ts-node": "^10.5.0"
+  }
+}

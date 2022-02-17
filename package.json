@@ -1,0 +1,32 @@
+{
+  "name": "jenova-graphql",
+  "version": "0.0.1",
+  "description": "Battery-included GraphQL Server in TypeScript",
+  "scripts": {
+    "publish": "clean-publish",
+    "compile": "tsc",
+    "prepublishOnly": "rm -rf ./dist && tsc && clean-publish",
+    "postpublish": "rm -rf ./dist"
+  },
+  "publishConfig": {
+    "directory": "dist"
+  },
+  "clean-publish": {
+    "withoutPublish": true,
+    "tempDir": "dist"
+  },
+  "files": ["dist"],
+  "devDependencies": {
+    "@types/node": "^17.0.18",
+    "clean-publish": "^4.0.0",
+    "ts-node": "10.5.0",
+    "typescript": "4.6.1-rc"
+  },
+  "dependencies": {
+    "@envelop/core": "^2.0.0",
+    "@envelop/response-cache": "^2.0.0",
+    "fastify": "3.27.1",
+    "graphql": "16.3.0",
+    "graphql-helix": "^1.11.0"
+  }
+}
