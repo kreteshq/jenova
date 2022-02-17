@@ -1,7 +1,9 @@
 {
   "name": "jenova-graphql",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Battery-included GraphQL Server in TypeScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
   "scripts": {
     "publish": "clean-publish",
     "compile": "tsc",
@@ -10,10 +12,6 @@
   },
   "publishConfig": {
     "directory": "dist"
-  },
-  "clean-publish": {
-    "withoutPublish": true,
-    "tempDir": "dist"
   },
   "files": ["dist"],
   "devDependencies": {
