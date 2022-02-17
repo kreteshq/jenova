@@ -7,8 +7,7 @@
   "scripts": {
     "publish": "clean-publish",
     "compile": "tsc",
-    "prepublishOnly": "rm -rf ./dist && tsc && clean-publish",
-    "postpublish": "rm -rf ./dist"
+    "prepublishOnly": "rm -rf ./dist && tsc && clean-publish"
   },
   "publishConfig": {
     "directory": "dist"
